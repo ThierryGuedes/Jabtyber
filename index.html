@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JabTyber</title>
+
+</head>
+<body>
+    <h1>JabTyper</h1>
+    <div id="container">
+    <input type="text" id="nome" placeholder="Nome do Jogador" size="50">
+    </div>
+    <p class="frase"></p>
+   
+    <ul>
+        <li><span id="tamanho-frase">19</span> palavras</li>
+        <li><span id="tempo">15</span> segundos</li>
+        <li><span>Pontução cada caractere CORRETO = 20pontos.</span> </li>
+        <li><span>Pontução cada caractere ERRADO = -10pontos.</span> </li>
+        <li><span>Não precisa se preocupar com CAIXA ALTA/BAIXA.</span> </li>
+    </ul>
+        <div>
+        <button id="botao" class="btn btn-success">Start/Reset</button><br><br>
+        <textarea placeholder="Digite o maximo em 15 segundos" id="campo" cols="120" rows="8"></textarea>
+    </div>
+    <ul>
+        <li><span id="caracteresDigitados">0</span> caracteres</li>
+        <li><span id="palavrasDigitadas">0</span> palavras</li>
+    </ul>
+
+        <h2>Placar</h2>
+        <table id="tabela" border="4">
+            <thead>
+                <tr>
+                  <th>Usuario</th>
+                  <th>Pontução Total</th>
+                </tr>
+              </thead>
+        </table>
+
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
